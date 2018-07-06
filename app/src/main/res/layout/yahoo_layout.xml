@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/border"
+    >
+
+    <TextView
+    android:id="@+id/conversations_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="#292D30"
+    tools:text="This is where my conversations are displayed"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:paddingTop="8dp"
+    android:paddingBottom="2dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/site_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            tools:text="Displayed Site"/>
+
+        <TextView
+            android:id="@+id/time_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            tools:text="Time"
+            android:gravity="right"/>
+    </LinearLayout>
+
+</LinearLayout>
